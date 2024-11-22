@@ -1,0 +1,28 @@
+{
+  "version": "1.2",
+  "dbname": "genomeDataset4",
+  "dbtype": "Protein",
+  "db-version": 5,
+  "description": "/home/lylu/geptop2/geptop_reconstruct/datasets2/genomeDataset4",
+  "number-of-letters": 1355450,
+  "number-of-sequences": 4065,
+  "last-updated": "2024-08-30T10:06:00",
+  "number-of-volumes": 1,
+  "bytes-total": 2474448,
+  "bytes-to-cache": 1392188,
+  "files": [
+    "genomeDataset4.pdb",
+    "genomeDataset4.phd",
+    "genomeDataset4.phi",
+    "genomeDataset4.phr",
+    "genomeDataset4.pin",
+    "genomeDataset4.pnd",
+    "genomeDataset4.pni",
+    "genomeDataset4.pog",
+    "genomeDataset4.pos",
+    "genomeDataset4.pot",
+    "genomeDataset4.psq",
+    "genomeDataset4.ptf",
+    "genomeDataset4.pto"
+  ]
+}

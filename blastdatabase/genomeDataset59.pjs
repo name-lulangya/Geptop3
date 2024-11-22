@@ -1,0 +1,28 @@
+{
+  "version": "1.2",
+  "dbname": "genomeDataset59",
+  "dbtype": "Protein",
+  "db-version": 5,
+  "description": "/home/lylu/geptop2/geptop_reconstruct/datasets2/genomeDataset59",
+  "number-of-letters": 1173635,
+  "number-of-sequences": 3806,
+  "last-updated": "2024-08-30T10:07:00",
+  "number-of-volumes": 1,
+  "bytes-total": 2226647,
+  "bytes-to-cache": 1208042,
+  "files": [
+    "genomeDataset59.pdb",
+    "genomeDataset59.phd",
+    "genomeDataset59.phi",
+    "genomeDataset59.phr",
+    "genomeDataset59.pin",
+    "genomeDataset59.pnd",
+    "genomeDataset59.pni",
+    "genomeDataset59.pog",
+    "genomeDataset59.pos",
+    "genomeDataset59.pot",
+    "genomeDataset59.psq",
+    "genomeDataset59.ptf",
+    "genomeDataset59.pto"
+  ]
+}

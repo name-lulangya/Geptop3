@@ -1,0 +1,28 @@
+{
+  "version": "1.2",
+  "dbname": "genomeDataset3",
+  "dbtype": "Protein",
+  "db-version": 5,
+  "description": "/home/lylu/geptop2/geptop_reconstruct/datasets2/genomeDataset3",
+  "number-of-letters": 1644331,
+  "number-of-sequences": 4850,
+  "last-updated": "2024-08-30T10:06:00",
+  "number-of-volumes": 1,
+  "bytes-total": 2973118,
+  "bytes-to-cache": 1688134,
+  "files": [
+    "genomeDataset3.pdb",
+    "genomeDataset3.phd",
+    "genomeDataset3.phi",
+    "genomeDataset3.phr",
+    "genomeDataset3.pin",
+    "genomeDataset3.pnd",
+    "genomeDataset3.pni",
+    "genomeDataset3.pog",
+    "genomeDataset3.pos",
+    "genomeDataset3.pot",
+    "genomeDataset3.psq",
+    "genomeDataset3.ptf",
+    "genomeDataset3.pto"
+  ]
+}

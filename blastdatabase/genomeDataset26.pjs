@@ -1,0 +1,28 @@
+{
+  "version": "1.2",
+  "dbname": "genomeDataset26",
+  "dbtype": "Protein",
+  "db-version": 5,
+  "description": "/home/lylu/geptop2/geptop_reconstruct/datasets2/genomeDataset26",
+  "number-of-letters": 1662894,
+  "number-of-sequences": 5355,
+  "last-updated": "2024-08-30T10:06:00",
+  "number-of-volumes": 1,
+  "bytes-total": 3082684,
+  "bytes-to-cache": 1711242,
+  "files": [
+    "genomeDataset26.pdb",
+    "genomeDataset26.phd",
+    "genomeDataset26.phi",
+    "genomeDataset26.phr",
+    "genomeDataset26.pin",
+    "genomeDataset26.pnd",
+    "genomeDataset26.pni",
+    "genomeDataset26.pog",
+    "genomeDataset26.pos",
+    "genomeDataset26.pot",
+    "genomeDataset26.psq",
+    "genomeDataset26.ptf",
+    "genomeDataset26.pto"
+  ]
+}

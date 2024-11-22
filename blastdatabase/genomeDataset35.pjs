@@ -1,0 +1,28 @@
+{
+  "version": "1.2",
+  "dbname": "genomeDataset35",
+  "dbtype": "Protein",
+  "db-version": 5,
+  "description": "/home/lylu/geptop2/geptop_reconstruct/datasets2/genomeDataset35",
+  "number-of-letters": 744007,
+  "number-of-sequences": 2693,
+  "last-updated": "2024-08-30T10:06:00",
+  "number-of-volumes": 1,
+  "bytes-total": 1484813,
+  "bytes-to-cache": 768397,
+  "files": [
+    "genomeDataset35.pdb",
+    "genomeDataset35.phd",
+    "genomeDataset35.phi",
+    "genomeDataset35.phr",
+    "genomeDataset35.pin",
+    "genomeDataset35.pnd",
+    "genomeDataset35.pni",
+    "genomeDataset35.pog",
+    "genomeDataset35.pos",
+    "genomeDataset35.pot",
+    "genomeDataset35.psq",
+    "genomeDataset35.ptf",
+    "genomeDataset35.pto"
+  ]
+}

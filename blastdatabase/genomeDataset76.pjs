@@ -1,0 +1,26 @@
+{
+  "version": "1.2",
+  "dbname": "genomeDataset76",
+  "dbtype": "Protein",
+  "db-version": 5,
+  "description": "/home/lylu/geptop2/geptop_reconstruct/datasets2/genomeDataset76",
+  "number-of-letters": 1480745,
+  "number-of-sequences": 4374,
+  "last-updated": "2024-08-30T10:08:00",
+  "number-of-volumes": 1,
+  "bytes-total": 2577666,
+  "bytes-to-cache": 1520264,
+  "files": [
+    "genomeDataset76.pdb",
+    "genomeDataset76.phd",
+    "genomeDataset76.phi",
+    "genomeDataset76.phr",
+    "genomeDataset76.pin",
+    "genomeDataset76.pog",
+    "genomeDataset76.pos",
+    "genomeDataset76.pot",
+    "genomeDataset76.psq",
+    "genomeDataset76.ptf",
+    "genomeDataset76.pto"
+  ]
+}

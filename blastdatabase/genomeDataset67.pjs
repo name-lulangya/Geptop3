@@ -1,0 +1,28 @@
+{
+  "version": "1.2",
+  "dbname": "genomeDataset67",
+  "dbtype": "Protein",
+  "db-version": 5,
+  "description": "/home/lylu/geptop2/geptop_reconstruct/datasets2/genomeDataset67",
+  "number-of-letters": 1351618,
+  "number-of-sequences": 4078,
+  "last-updated": "2024-08-30T10:08:00",
+  "number-of-volumes": 1,
+  "bytes-total": 2457728,
+  "bytes-to-cache": 1388473,
+  "files": [
+    "genomeDataset67.pdb",
+    "genomeDataset67.phd",
+    "genomeDataset67.phi",
+    "genomeDataset67.phr",
+    "genomeDataset67.pin",
+    "genomeDataset67.pnd",
+    "genomeDataset67.pni",
+    "genomeDataset67.pog",
+    "genomeDataset67.pos",
+    "genomeDataset67.pot",
+    "genomeDataset67.psq",
+    "genomeDataset67.ptf",
+    "genomeDataset67.pto"
+  ]
+}

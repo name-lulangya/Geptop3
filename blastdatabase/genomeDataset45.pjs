@@ -1,0 +1,28 @@
+{
+  "version": "1.2",
+  "dbname": "genomeDataset45",
+  "dbtype": "Protein",
+  "db-version": 5,
+  "description": "/home/lylu/geptop2/geptop_reconstruct/datasets2/genomeDataset45",
+  "number-of-letters": 1324497,
+  "number-of-sequences": 4058,
+  "last-updated": "2024-08-30T10:07:00",
+  "number-of-volumes": 1,
+  "bytes-total": 2443749,
+  "bytes-to-cache": 1361172,
+  "files": [
+    "genomeDataset45.pdb",
+    "genomeDataset45.phd",
+    "genomeDataset45.phi",
+    "genomeDataset45.phr",
+    "genomeDataset45.pin",
+    "genomeDataset45.pnd",
+    "genomeDataset45.pni",
+    "genomeDataset45.pog",
+    "genomeDataset45.pos",
+    "genomeDataset45.pot",
+    "genomeDataset45.psq",
+    "genomeDataset45.ptf",
+    "genomeDataset45.pto"
+  ]
+}

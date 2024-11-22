@@ -1,0 +1,28 @@
+{
+  "version": "1.2",
+  "dbname": "genomeDataset11",
+  "dbtype": "Protein",
+  "db-version": 5,
+  "description": "/home/lylu/geptop2/geptop_reconstruct/datasets2/genomeDataset11",
+  "number-of-letters": 952658,
+  "number-of-sequences": 3351,
+  "last-updated": "2024-08-30T10:05:00",
+  "number-of-volumes": 1,
+  "bytes-total": 1903106,
+  "bytes-to-cache": 982970,
+  "files": [
+    "genomeDataset11.pdb",
+    "genomeDataset11.phd",
+    "genomeDataset11.phi",
+    "genomeDataset11.phr",
+    "genomeDataset11.pin",
+    "genomeDataset11.pnd",
+    "genomeDataset11.pni",
+    "genomeDataset11.pog",
+    "genomeDataset11.pos",
+    "genomeDataset11.pot",
+    "genomeDataset11.psq",
+    "genomeDataset11.ptf",
+    "genomeDataset11.pto"
+  ]
+}

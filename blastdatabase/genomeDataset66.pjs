@@ -1,0 +1,28 @@
+{
+  "version": "1.2",
+  "dbname": "genomeDataset66",
+  "dbtype": "Protein",
+  "db-version": 5,
+  "description": "/home/lylu/geptop2/geptop_reconstruct/datasets2/genomeDataset66",
+  "number-of-letters": 1452672,
+  "number-of-sequences": 4807,
+  "last-updated": "2024-08-30T10:08:00",
+  "number-of-volumes": 1,
+  "bytes-total": 2757892,
+  "bytes-to-cache": 1496088,
+  "files": [
+    "genomeDataset66.pdb",
+    "genomeDataset66.phd",
+    "genomeDataset66.phi",
+    "genomeDataset66.phr",
+    "genomeDataset66.pin",
+    "genomeDataset66.pnd",
+    "genomeDataset66.pni",
+    "genomeDataset66.pog",
+    "genomeDataset66.pos",
+    "genomeDataset66.pot",
+    "genomeDataset66.psq",
+    "genomeDataset66.ptf",
+    "genomeDataset66.pto"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "version": "1.2",
+  "dbname": "genomeDataset23",
+  "dbtype": "Protein",
+  "db-version": 5,
+  "description": "/home/lylu/geptop2/geptop_reconstruct/datasets2/genomeDataset23",
+  "number-of-letters": 1991590,
+  "number-of-sequences": 5727,
+  "last-updated": "2024-08-30T10:06:00",
+  "number-of-volumes": 1,
+  "bytes-total": 3513134,
+  "bytes-to-cache": 2043286,
+  "files": [
+    "genomeDataset23.pdb",
+    "genomeDataset23.phd",
+    "genomeDataset23.phi",
+    "genomeDataset23.phr",
+    "genomeDataset23.pin",
+    "genomeDataset23.pnd",
+    "genomeDataset23.pni",
+    "genomeDataset23.pog",
+    "genomeDataset23.pos",
+    "genomeDataset23.pot",
+    "genomeDataset23.psq",
+    "genomeDataset23.ptf",
+    "genomeDataset23.pto"
+  ]
+}

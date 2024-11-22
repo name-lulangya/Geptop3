@@ -1,0 +1,28 @@
+{
+  "version": "1.2",
+  "dbname": "genomeDataset79",
+  "dbtype": "Protein",
+  "db-version": 5,
+  "description": "/home/lylu/geptop2/geptop_reconstruct/datasets2/genomeDataset79",
+  "number-of-letters": 1111359,
+  "number-of-sequences": 3531,
+  "last-updated": "2024-08-30T10:08:00",
+  "number-of-volumes": 1,
+  "bytes-total": 2080224,
+  "bytes-to-cache": 1143291,
+  "files": [
+    "genomeDataset79.pdb",
+    "genomeDataset79.phd",
+    "genomeDataset79.phi",
+    "genomeDataset79.phr",
+    "genomeDataset79.pin",
+    "genomeDataset79.pnd",
+    "genomeDataset79.pni",
+    "genomeDataset79.pog",
+    "genomeDataset79.pos",
+    "genomeDataset79.pot",
+    "genomeDataset79.psq",
+    "genomeDataset79.ptf",
+    "genomeDataset79.pto"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "version": "1.2",
+  "dbname": "genomeDataset48",
+  "dbtype": "Protein",
+  "db-version": 5,
+  "description": "/home/lylu/geptop2/geptop_reconstruct/datasets2/genomeDataset48",
+  "number-of-letters": 1271219,
+  "number-of-sequences": 3700,
+  "last-updated": "2024-08-30T10:07:00",
+  "number-of-volumes": 1,
+  "bytes-total": 2286906,
+  "bytes-to-cache": 1304672,
+  "files": [
+    "genomeDataset48.pdb",
+    "genomeDataset48.phd",
+    "genomeDataset48.phi",
+    "genomeDataset48.phr",
+    "genomeDataset48.pin",
+    "genomeDataset48.pnd",
+    "genomeDataset48.pni",
+    "genomeDataset48.pog",
+    "genomeDataset48.pos",
+    "genomeDataset48.pot",
+    "genomeDataset48.psq",
+    "genomeDataset48.ptf",
+    "genomeDataset48.pto"
+  ]
+}

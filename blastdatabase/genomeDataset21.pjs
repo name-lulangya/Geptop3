@@ -1,0 +1,28 @@
+{
+  "version": "1.2",
+  "dbname": "genomeDataset21",
+  "dbtype": "Protein",
+  "db-version": 5,
+  "description": "/home/lylu/geptop2/geptop_reconstruct/datasets2/genomeDataset21",
+  "number-of-letters": 1942310,
+  "number-of-sequences": 5632,
+  "last-updated": "2024-08-30T10:06:00",
+  "number-of-volumes": 1,
+  "bytes-total": 3442710,
+  "bytes-to-cache": 1993151,
+  "files": [
+    "genomeDataset21.pdb",
+    "genomeDataset21.phd",
+    "genomeDataset21.phi",
+    "genomeDataset21.phr",
+    "genomeDataset21.pin",
+    "genomeDataset21.pnd",
+    "genomeDataset21.pni",
+    "genomeDataset21.pog",
+    "genomeDataset21.pos",
+    "genomeDataset21.pot",
+    "genomeDataset21.psq",
+    "genomeDataset21.ptf",
+    "genomeDataset21.pto"
+  ]
+}

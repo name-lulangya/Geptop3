@@ -1,0 +1,28 @@
+{
+  "version": "1.2",
+  "dbname": "genomeDataset42",
+  "dbtype": "Protein",
+  "db-version": 5,
+  "description": "/home/lylu/geptop2/geptop_reconstruct/datasets2/genomeDataset42",
+  "number-of-letters": 1600929,
+  "number-of-sequences": 4410,
+  "last-updated": "2024-08-30T10:06:00",
+  "number-of-volumes": 1,
+  "bytes-total": 2799697,
+  "bytes-to-cache": 1640772,
+  "files": [
+    "genomeDataset42.pdb",
+    "genomeDataset42.phd",
+    "genomeDataset42.phi",
+    "genomeDataset42.phr",
+    "genomeDataset42.pin",
+    "genomeDataset42.pnd",
+    "genomeDataset42.pni",
+    "genomeDataset42.pog",
+    "genomeDataset42.pos",
+    "genomeDataset42.pot",
+    "genomeDataset42.psq",
+    "genomeDataset42.ptf",
+    "genomeDataset42.pto"
+  ]
+}

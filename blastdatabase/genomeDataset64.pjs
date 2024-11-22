@@ -1,0 +1,28 @@
+{
+  "version": "1.2",
+  "dbname": "genomeDataset64",
+  "dbtype": "Protein",
+  "db-version": 5,
+  "description": "/home/lylu/geptop2/geptop_reconstruct/datasets2/genomeDataset64",
+  "number-of-letters": 1517304,
+  "number-of-sequences": 4916,
+  "last-updated": "2024-08-30T10:08:00",
+  "number-of-volumes": 1,
+  "bytes-total": 2870910,
+  "bytes-to-cache": 1561701,
+  "files": [
+    "genomeDataset64.pdb",
+    "genomeDataset64.phd",
+    "genomeDataset64.phi",
+    "genomeDataset64.phr",
+    "genomeDataset64.pin",
+    "genomeDataset64.pnd",
+    "genomeDataset64.pni",
+    "genomeDataset64.pog",
+    "genomeDataset64.pos",
+    "genomeDataset64.pot",
+    "genomeDataset64.psq",
+    "genomeDataset64.ptf",
+    "genomeDataset64.pto"
+  ]
+}

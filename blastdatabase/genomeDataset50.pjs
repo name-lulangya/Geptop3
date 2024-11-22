@@ -1,0 +1,28 @@
+{
+  "version": "1.2",
+  "dbname": "genomeDataset50",
+  "dbtype": "Protein",
+  "db-version": 5,
+  "description": "/home/lylu/geptop2/geptop_reconstruct/datasets2/genomeDataset50",
+  "number-of-letters": 1477931,
+  "number-of-sequences": 4339,
+  "last-updated": "2024-08-30T10:07:00",
+  "number-of-volumes": 1,
+  "bytes-total": 2660961,
+  "bytes-to-cache": 1517135,
+  "files": [
+    "genomeDataset50.pdb",
+    "genomeDataset50.phd",
+    "genomeDataset50.phi",
+    "genomeDataset50.phr",
+    "genomeDataset50.pin",
+    "genomeDataset50.pnd",
+    "genomeDataset50.pni",
+    "genomeDataset50.pog",
+    "genomeDataset50.pos",
+    "genomeDataset50.pot",
+    "genomeDataset50.psq",
+    "genomeDataset50.ptf",
+    "genomeDataset50.pto"
+  ]
+}

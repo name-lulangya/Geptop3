@@ -1,0 +1,28 @@
+{
+  "version": "1.2",
+  "dbname": "target82",
+  "dbtype": "Protein",
+  "db-version": 5,
+  "description": "geptop_reconstruct/uploadFlieGeptop/target82",
+  "number-of-letters": 542246,
+  "number-of-sequences": 1740,
+  "last-updated": "2024-08-31T06:58:00",
+  "number-of-volumes": 1,
+  "bytes-total": 1035011,
+  "bytes-to-cache": 558035,
+  "files": [
+    "target82.pdb",
+    "target82.phd",
+    "target82.phi",
+    "target82.phr",
+    "target82.pin",
+    "target82.pnd",
+    "target82.pni",
+    "target82.pog",
+    "target82.pos",
+    "target82.pot",
+    "target82.psq",
+    "target82.ptf",
+    "target82.pto"
+  ]
+}

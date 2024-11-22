@@ -1,0 +1,28 @@
+{
+  "version": "1.2",
+  "dbname": "genomeDataset57",
+  "dbtype": "Protein",
+  "db-version": 5,
+  "description": "/home/lylu/geptop2/geptop_reconstruct/datasets2/genomeDataset57",
+  "number-of-letters": 1523828,
+  "number-of-sequences": 4629,
+  "last-updated": "2024-08-30T10:07:00",
+  "number-of-volumes": 1,
+  "bytes-total": 2840436,
+  "bytes-to-cache": 1565642,
+  "files": [
+    "genomeDataset57.pdb",
+    "genomeDataset57.phd",
+    "genomeDataset57.phi",
+    "genomeDataset57.phr",
+    "genomeDataset57.pin",
+    "genomeDataset57.pnd",
+    "genomeDataset57.pni",
+    "genomeDataset57.pog",
+    "genomeDataset57.pos",
+    "genomeDataset57.pot",
+    "genomeDataset57.psq",
+    "genomeDataset57.ptf",
+    "genomeDataset57.pto"
+  ]
+}

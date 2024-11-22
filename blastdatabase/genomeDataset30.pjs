@@ -1,0 +1,28 @@
+{
+  "version": "1.2",
+  "dbname": "genomeDataset30",
+  "dbtype": "Protein",
+  "db-version": 5,
+  "description": "/home/lylu/geptop2/geptop_reconstruct/datasets2/genomeDataset30",
+  "number-of-letters": 1315811,
+  "number-of-sequences": 3907,
+  "last-updated": "2024-08-30T10:06:00",
+  "number-of-volumes": 1,
+  "bytes-total": 2367853,
+  "bytes-to-cache": 1351127,
+  "files": [
+    "genomeDataset30.pdb",
+    "genomeDataset30.phd",
+    "genomeDataset30.phi",
+    "genomeDataset30.phr",
+    "genomeDataset30.pin",
+    "genomeDataset30.pnd",
+    "genomeDataset30.pni",
+    "genomeDataset30.pog",
+    "genomeDataset30.pos",
+    "genomeDataset30.pot",
+    "genomeDataset30.psq",
+    "genomeDataset30.ptf",
+    "genomeDataset30.pto"
+  ]
+}
