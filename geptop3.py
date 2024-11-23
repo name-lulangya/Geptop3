@@ -523,5 +523,5 @@ def main():
 
 
 if __name__ =='__main__':
-	rootdir = "/home/lylu/Geptop3/run"  # Folder directory of Geptop3
+	rootdir = "/****/***/Geptop3"  # Folder directory of Geptop3
 	main()
