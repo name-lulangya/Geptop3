@@ -420,7 +420,7 @@ def result_final(geptop_id_score, scfm_id_score, geptop_coefficient,scfm_coeffic
 	id_score_finally = {}
 
 	for k,v in geptop_id_score.items():
-		id_score_finally[k] = geptop_id_score[k]*(geptop_coefficient**25)+scfm_id_score[k]*(scfm_coefficient**25)
+		id_score_finally[k] = geptop_id_score[k]*(geptop_coefficient**26)+scfm_id_score[k]*(scfm_coefficient**26)
 	score_finally = id_score_finally.values()
 	max_score = max(score_finally)
 	min_score = min(score_finally)
