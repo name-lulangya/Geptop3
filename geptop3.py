@@ -359,7 +359,7 @@ def train_model(X_ban, Y_ban):
     """Train the Support Vector Machine model using grid search"""
     prammar_dict = {'C': [0.1,0.5,1,5,10,50,100,500,1000], 'gamma': [0.0001,0.0005,0.001,0.005,0.01,0.05,0.1,0.5,1,5,10],
                     'kernel': ['rbf'], 'class_weight':['balanced']}
-    svc = SVC(probability=True)
+    svc = SVC(probability=True, random_state= 306)
     grid = GridSearchCV(estimator = svc ,param_grid = prammar_dict, cv = 5, refit = True,scoring = 'roc_auc', n_jobs = 10,)
     result = grid.fit( X_ban, Y_ban)
 
@@ -430,9 +430,7 @@ def result_final(geptop_id_score, scfm_id_score, geptop_coefficient,scfm_coeffic
 		if id_score_finally[k] >= Cutoff:
 			EssentialGeneNumber += 1
 
-	id_score_sorted = sorted(id_score_finally.items(), key = lambda e:e[1],reverse=True)
-
-	return id_score_sorted, EssentialGeneNumber
+	return id_score_finally, EssentialGeneNumber
 
 def write_result(userFileName, Prediction, EssentialGeneNumber, Cutoff):
 	"""Write the results into a file"""
@@ -499,7 +497,7 @@ def workflow3(feature, seed_feature, Geptop_result, spieces_distance_result, use
 	""""""
 	X = seed_feature.iloc[:,1:4044]
 	Y = seed_feature['essensiality']
-	smo = SMOTE()
+	smo = SMOTE(random_state = 608)
 	X_ban, Y_ban = smo.fit_resample(X,Y)
 	model_trained = train_model(X_ban, Y_ban)
 	model_trained.fit(X_ban, Y_ban)
@@ -507,8 +505,7 @@ def workflow3(feature, seed_feature, Geptop_result, spieces_distance_result, use
 	scfm_id_score = prediction(model_trained, feature)
 	geptop_coefficient,scfm_coefficient = coefficient_caculate(userFileName, seed_5folds_auc, spieces_distance_result)
 	result_finally, EssentialGeneNumber =  result_final(Geptop_result, scfm_id_score, geptop_coefficient,scfm_coefficient, Cutoff)
-	Prediction = {p[0]:p[1] for p in result_finally}
-	write_result(userFileName, Prediction, EssentialGeneNumber, Cutoff)
+	write_result(userFileName, result_finally, EssentialGeneNumber, Cutoff)
 	print("workflow3 done")
 
 
