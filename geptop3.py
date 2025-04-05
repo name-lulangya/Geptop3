@@ -63,7 +63,7 @@ def information_exstract(Target_Record):
 			Geptop_prediction[record.id] = 0
 			GeneID.append(record.id)
 	
-	deg=open('{}/DEG2'.format(rootdir),'r')
+	deg=open('{}/DEG3'.format(rootdir),'r')
 	EssentialGeneid=[]  # Gene id od reference species
 	for row in deg:
 		if "|"in row:
@@ -199,9 +199,11 @@ def homology_mapping(TargetCV,Target,OGfaa):
 	for (query,hit) in BLAST_Results1:
 		if (hit,query) in BLAST_Results2:
 			blast_result.append((query,hit))
-		elif (hit,"ref|{}|".format(query)) in BLAST_Results2:
+		elif (hit,f"ref|{query}|") in BLAST_Results2:
 			blast_result.append((query,hit))
 		elif (hit.split("|")[1],query) in BLAST_Results2:
+			blast_result.append((query,hit))
+		elif (hit.split("|")[1],f"ref|{query}|") in BLAST_Results2:
 			blast_result.append((query,hit))
 
 	return (OGfaa,blast_result,SpeciesDistance)
@@ -273,6 +275,23 @@ def id_seq_get(userFileName):
 			id_seq[c.id] = c.seq.upper()
 	return id_seq
 
+def multi_process_feature_get(id_seq, n):
+	"""Extract sequence features using n processes"""
+	length = len(id_seq)
+	id_seq_list = list(id_seq.items())
+	b = [dict(id_seq_list[i:i+n]) for i in range(0, length, n)]
+	p=Pool(n)  # Number of parallel processes
+	result = []
+	for each_id_seq in b:
+		result.append(p.apply_async(feature_get,args=(each_id_seq,)))
+	p.close()
+	p.join()
+	feature_list = []
+	for work in result:
+		each_feature, each_delete = work.get()
+		feature_list.append(each_feature)
+	merged_df = pd.concat(feature_list, ignore_index=False)
+	return merged_df
 def feature_get(id_seq):
 	"""Extraction of sequence frequency feature"""
 	K, L = 4,3
@@ -468,7 +487,7 @@ def workflow1(Target, userFileName):
 
 	p=Pool(8)  # Number of parallel processes
 	result=[] 
-	for root,dirs,files in os.walk('{}/datasets2'.format(rootdir)):
+	for root,dirs,files in os.walk('{}/datasets3'.format(rootdir)):
 		for f in files:	 
 			OGfaa=os.path.join(root,f)
 			result.append(p.apply_async(homology_mapping,args=(TargetCV,Target,OGfaa,)))
@@ -486,12 +505,12 @@ def workflow2(Geptop_result, userFileName):
 	"""Seed selection and extraction of sequence features"""
 	seed_essential, seed_nonessential = seed_select(Geptop_result)
 	id_seq = id_seq_get(userFileName)
-	feature_result, delete = feature_get(id_seq)
-	feature_finally = dataframe_drop(feature_result, delete)
-	seed_feature = seed_feature_extract(feature_finally,seed_essential, seed_nonessential)
+	parallel_process = 8
+	feature_result = multi_process_feature_get(id_seq, parallel_process)
+	seed_feature = seed_feature_extract(feature_result,seed_essential, seed_nonessential)
 	print("workflow2 done")
 
-	return feature_finally, seed_feature
+	return feature_result, seed_feature
 
 def workflow3(feature, seed_feature, Geptop_result, spieces_distance_result, userFileName, Cutoff):
 	""""""
