@@ -23,7 +23,7 @@ from Bio.Seq import translate
 def getargu():
 	"""Get argument from terminal"""
 	LenArgv = len(sys.argv) 
-	Cutoff = 0.28 # default value
+	Cutoff = 0.3 # default value
 	for i in range(LenArgv):
 		if sys.argv[i] == '-i':
 			Target=sys.argv[i+1]  
