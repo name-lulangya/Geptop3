@@ -15,6 +15,7 @@ from fractions import Fraction
 from imblearn.over_sampling import SMOTE
 from sklearn.svm import SVC
 from sklearn.model_selection import cross_val_score, GridSearchCV
+from sklearn.linear_model import LinearRegression
 import joblib
 from Bio.Seq import translate
 
@@ -402,10 +403,15 @@ def prediction(model, feature):
 
 def coefficient_caculate(userFileName, seed_5folds_auc, spieces_distance_result):
 	"""Calculate the coefficients of the two models"""
-	with open("{}/geptop_auc_predict_LR.pkl".format(rootdir),'rb') as g:
-		geptop_model = joblib.load(g)
-	with open("{}/scfm_auc_predict_LR.pkl".format(rootdir),"rb") as s:
-		scfm_model = joblib.load(s)
+	geptop_model = LinearRegression()
+	geptop_params = np.load("{}/geptop_auc_predict_LR.npz".format(rootdir))
+	geptop_model.coef_ = geptop_params['coef']
+	geptop_model.intercept_ = geptop_params['intercept']
+	
+	scfm_model = LinearRegression()
+	scfm_params = np.load("{}/scfm_auc_predict_LR.npz".format(rootdir))
+	scfm_model.coef_ = scfm_params['coef']
+	scfm_model.intercept_ = scfm_params['intercept']
 
 	geptop_aucTure_file = open("{}/reference_auc.txt".format(rootdir),'r')
 	geptop_aucTure_list = [row.strip() for row in geptop_aucTure_file.readlines()]
@@ -418,9 +424,9 @@ def coefficient_caculate(userFileName, seed_5folds_auc, spieces_distance_result)
 		geptop_aucTure_dict["genomeDataset{}".format(num+1)] = float(geptop_aucTure_list[num])
 
 	distance_sorted = sorted(distance.items(), key = lambda e:e[1],reverse=True)
-	for num1 in range(15):
+	for num1 in range(5):
 		spieces_name = distance_sorted[num1][0]
-		distance_multi_aucTure["columns{}".format(num1+1)] = distance[spieces_name]*geptop_aucTure_dict[spieces_name]
+		distance_multi_aucTure["columns{}".format(num1+1)] = geptop_aucTure_dict[spieces_name]
 
 	geotop_coefficient_data = pd.DataFrame(data=distance_multi_aucTure,index=["{}".format(userFileName)])
 	geptop_coefficient = geptop_model.predict(geotop_coefficient_data)[0] if geptop_model.predict(geotop_coefficient_data)[0] <= 1 else 1.0
