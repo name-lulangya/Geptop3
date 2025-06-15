@@ -9,4 +9,4 @@ A newly essential gene predict tool combining homology mapping and machine learn
 ## Usage
 1. Whole-genomic __NUCLEOTIDE__ sequences in __FASTA__ format is the only usable type.
 2. Change the root_dir variable in both file_decompress.py and Geptop3.py to the path of the Geptop3 directory on your device. Then run file_decompress.py to decompress the files.
-3. Save the FASTA files in the uploadFile folder, and then run the terminal command. *python geptop3.py -i uploadFile/your_file.fna*. Optional parameters: *–s essentiality score cutoff*, range:0~1, default: 0.28.
+3. Save the FASTA files in the uploadFile folder, and then run the terminal command. *python geptop3.py -i uploadFile/your_file.fna*. Optional parameters: *–s essentiality score cutoff*, range:0~1, default: 0.3.
